@@ -56,4 +56,4 @@ FLOWCHART LR
     I --> J[Caregiver / Family Notifications]
     B --> K[FastAPI WS Server] --> L[React Dashboard]
 
-Please keep backend/.env secret. Good luck at the hackathon!
+
