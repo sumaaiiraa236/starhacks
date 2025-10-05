@@ -1,0 +1,3 @@
+Timestamp,DeviceID,Event,Location
+2025-01-01T00:02:00,D2000,FALL,Living Room
+2025-01-01T00:11:00,D2001,INACTIVITY,Bedroom

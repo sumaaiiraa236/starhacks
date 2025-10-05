@@ -1,0 +1,4 @@
+Timestamp,DeviceID,HeartRate,OxygenSaturation,BloodPressure,Alert
+2025-01-01T00:01:00,D1000,119,96,124/70,Yes
+2025-01-01T00:02:00,D1001,75,90,132/90,Yes
+2025-01-01T00:03:00,D1002,112,93,130/72,Yes

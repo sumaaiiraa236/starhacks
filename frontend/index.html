@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><meta charset='utf-8'><title>CareCrew Dashboard</title>
+<style>body{font-family:Inter,Arial,sans-serif;background:#f6f8fb;padding:20px}#log{max-width:900px;margin:0 auto;background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}li{margin-bottom:8px}</style>
+</head>
+<body>
+  <div id='log'><h2>CareCrew Live Events</h2><ul id='events'></ul></div>
+  <script>
+    const ul = document.getElementById('events');
+    const ws = new WebSocket('ws://172.17.0.1:8000/ws');
+    ws.onmessage = (ev) => { try{ const o=JSON.parse(ev.data); const li=document.createElement('li'); li.textContent = JSON.stringify(o).slice(0,200); ul.prepend(li);}catch(e){ const li=document.createElement('li'); li.textContent = ev.data; ul.prepend(li);} }
+    ws.onopen = ()=>console.log('WS connected')
+    ws.onclose = ()=>console.log('WS closed')
+  </script>
+</body>
+</html>
