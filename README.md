@@ -1,5 +1,7 @@
 CareCrew - Final Complete Release (Embedded Keys)
 ================================================
+<img width="735" height="520" alt="image" src="https://github.com/user-attachments/assets/c9211fdb-bea8-4240-87d5-1f9834291937" />
+
 
 This package is the final CareCrew elderly-care multi-agent system prepared for demo and extension.
 It includes backend services, a simple real-time frontend, demo data, and utilities. The backend/.env file
