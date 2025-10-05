@@ -39,5 +39,18 @@ CREDITS & TOOLS
 - FastAPI + uvicorn for realtime API / WebSocket
 - Redis (optional) for message bus scaling
 - SQLAlchemy + Postgres (optional) for production LTM
+FLOWCHART LR
+    A[Sensor Event (CSV)] -->|Publish| B(Message Bus)
+    B --> C[Health Watcher Agent]
+    B --> D[Safety Monitor]
+    C --> E[Emergency Responder]
+    D --> E
+    E --> F[SQLite/Postgres LTM]
+    E --> G[Reminder Manager]
+    G --> F
+    F --> H[Pinecone (Vector Memory)]
+    H --> I[Family Liaison Agent]
+    I --> J[Caregiver / Family Notifications]
+    B --> K[FastAPI WS Server] --> L[React Dashboard]
 
 Please keep backend/.env secret. Good luck at the hackathon!
