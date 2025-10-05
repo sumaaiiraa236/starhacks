@@ -1,11 +1,10 @@
-CareCrew - Final Complete Release (Embedded Keys)
+CareCrew
 ================================================
 <img width="735" height="520" alt="image" src="https://github.com/user-attachments/assets/c9211fdb-bea8-4240-87d5-1f9834291937" />
 
 
-This package is the final CareCrew elderly-care multi-agent system prepared for demo and extension.
-It includes backend services, a simple real-time frontend, demo data, and utilities. The backend/.env file
-is pre-populated with keys you provided (keep this zip private).
+CareCrew empowers families, caregivers, and healthcare providers with real-time, accurate, and emotionally intelligent insights.
+It lays the foundation for scalable, autonomous elderly care systems that can save lives, reduce caregiver burnout, and bring peace of mind to families.
 
 WHAT'S INCLUDED
 - backend/: FastAPI, agents (rule-based), event replay, DB helpers, bus, Pinecone seeding.
