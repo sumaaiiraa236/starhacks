@@ -39,6 +39,7 @@ CREDITS & TOOLS
 - FastAPI + uvicorn for realtime API / WebSocket
 - Redis (optional) for message bus scaling
 - SQLAlchemy + Postgres (optional) for production LTM
+
 FLOWCHART LR
     A[Sensor Event (CSV)] -->|Publish| B(Message Bus)
     B --> C[Health Watcher Agent]
