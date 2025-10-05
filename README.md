@@ -22,7 +22,7 @@ QUICK START (Guaranteed demo - SQLite, no external services required)
    conda activate carecrew
 3. Install minimal deps:
    python -m pip install pandas python-dotenv fastapi uvicorn
-   # (or install full requirements: python -m pip install -r requirements.txt)
+   (or install full requirements: python -m pip install -r requirements.txt)
 4. Run demo:
    cd backend
    python setup_db.py
